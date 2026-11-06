@@ -2,12 +2,12 @@
 
 # Mubashar Sharif
 
-**Senior SEO Analyst · Founder, Searchprex and SEO Autopilot**
+**Senior SEO Analyst · Founder, SEO Autopilot**
 Daska, Punjab, Pakistan · Works US business hours
 
-I'm Mubashar Sharif, a Senior SEO Analyst and the founder of Searchprex, with 5+ years of hands-on technical, local and ecommerce SEO for 20+ clients. I helped a 35,000-product store grow monthly net sales from $5,832 to $19,100 in two months, took a Michigan retailer from about 4,000 to 12.2K indexed pages, and ranked a UK remittance brand #1 above Wise and Xoom, with 113K organic clicks in 2024. I also built SEO Autopilot, the content and indexing system used in that Michigan recovery. I'm Semrush and HubSpot certified.
+I'm Mubashar Sharif, a Senior SEO Analyst and the founder of SEO Autopilot, with 5+ years of hands-on technical, local and ecommerce SEO for 20+ clients. I helped a 35,000-product store grow monthly net sales from $5,832 to $19,100 in two months, took a Michigan retailer from about 4,000 to 12.2K indexed pages, and ranked a UK remittance brand #1 above Wise and Xoom, with 113K organic clicks in 2024. I also built SEO Autopilot, the content and indexing system used in that Michigan recovery. I'm Semrush and HubSpot certified.
 
-[Email me](mailto:mubashar@searchprex.com) · [LinkedIn](https://www.linkedin.com/in/mubashar-sharif-senior-seo-analyst) · [searchprex.com](https://www.searchprex.com)
+[Email me](mailto:mubasharshahzad726@gmail.com) · [LinkedIn](https://www.linkedin.com/in/mubashar-sharif-senior-seo-analyst)
 
 | 5+ | 20+ | +227% |
 |---|---|---|
@@ -38,8 +38,6 @@ Each result is backed by original screenshots from Google Search Console, WooCom
 
 <img src="assets/smk-store-net-sales-april-2026.webp" alt="SMK Store WooCommerce dashboard for April 2026 showing $5,832.02 net sales." width="49%"> <img src="assets/smk-store-net-sales-june-2026.webp" alt="SMK Store WooCommerce dashboard for June 2026 showing $19,100.71 net sales." width="49%"> 
 
-[Read the full case study](https://www.searchprex.com/case-studies/ecommerce/smk-store)
-
 ### Michigan Outdoor Sports
 
 *Technical SEO · Michigan, USA · May to September 2026*
@@ -50,8 +48,6 @@ Each result is backed by original screenshots from Google Search Console, WooCom
 - **What I did:** Submitted sitemaps, fixed indexing blocks and crawl waste, and rewrote thin pages at scale with SEO Autopilot. Net sales went from $0.00 on 20 July to $523.49 month to date on 25 September.
 
 <img src="assets/michigan-outdoor-sports-pages-indexed.webp" alt="Google Search Console showing 12.2K pages indexed on 21 August 2026, up from 5,247 on 13 June." width="49%"> <img src="assets/michigan-outdoor-sports-us-clicks.webp" alt="Google Search Console showing US clicks of 224 against 322 and CTR of 3.7% against 5.1%." width="49%"> 
-
-[Read the full case study](https://www.searchprex.com/case-studies/ecommerce/michigan-outdoor-sports)
 
 ### Remit Choice
 
@@ -64,8 +60,6 @@ Each result is backed by original screenshots from Google Search Console, WooCom
 
 <img src="assets/remit-choice-rank-1-above-wise-xoom.webp" alt="Google results with Remit Choice first for free of cost money transfer to Pakistan from UK, above Xoom and Wise." width="49%"> <img src="assets/remit-choice-search-console-2024.webp" alt="Google Search Console for 2024 showing 113K clicks and 5.76M impressions for remitchoice.com." width="49%"> 
 
-[Read the full case study](https://www.searchprex.com/case-studies/fintech/remit-choice)
-
 ### HVAC Services Team
 
 *Local SEO and AI search · Simi Valley, CA*
@@ -76,8 +70,6 @@ Each result is backed by original screenshots from Google Search Console, WooCom
 - **What I did:** Cleaned up technical issues, rebuilt core service pages, strengthened local signals and structured content for AI Overviews.
 
 <img src="assets/hvac-services-team-ai-overview.webp" alt="Google AI Overview naming HVAC Services Team for free AC installation estimates in Simi Valley." width="49%"> <img src="assets/hvac-services-team-first-organic-result.webp" alt="Google results with the HVAC Services Team blog as the first organic result below the ads." width="49%"> 
-
-[Read the full case study](https://www.searchprex.com/case-studies/hvac/local-hvac-services)
 
 ### D.O.L.L.S. Cleaning
 
@@ -90,8 +82,6 @@ Each result is backed by original screenshots from Google Search Console, WooCom
 
 <img src="assets/dolls-cleaning-search-console-comparison.webp" alt="Google Search Console: 192 to 264 clicks and 41K to 106K impressions, June to July 2025." width="49%"> <img src="assets/dolls-cleaning-rank-1-and-2-clawson.webp" alt="Google results with D.O.L.L.S. Cleaning first and second for carpet cleaning services in Clawson, MI." width="49%"> 
 
-[Read the full case study](https://www.searchprex.com/case-studies/cleaning/dolls-cleaning)
-
 ### Mammoth Roofing
 
 *Local SEO · Texas · 28 days to October 2024*
@@ -102,8 +92,6 @@ Each result is backed by original screenshots from Google Search Console, WooCom
 - **What I did:** Mapped keywords across services, built location pages, fixed technical issues and published content around what Texas homeowners search.
 
 <img src="assets/mammoth-roofing-search-console-comparison.webp" alt="Google Search Console comparison for Mammoth Roofing showing impressions rising from 16.9K to 45.2K over 28 days." width="60%"> 
-
-[Read the full case study](https://www.searchprex.com/case-studies/roofing/mammoth-roofing)
 
 ### Door Doctor
 
@@ -116,8 +104,6 @@ Each result is backed by original screenshots from Google Search Console, WooCom
 
 <img src="assets/door-doctor-business-profile-performance.webp" alt="Google Business Profile Performance report showing 490 interactions for April to May 2025." width="60%"> 
 
-[Read the full case study](https://www.searchprex.com/case-studies/home-services/door-doctor)
-
 ### Glendora Kitchen Cabinets
 
 *Local SEO · Glendora, CA*
@@ -128,8 +114,6 @@ Each result is backed by original screenshots from Google Search Console, WooCom
 - **What I did:** Researched high-intent local terms, rebuilt on-page SEO and created content for Glendora and nearby cities.
 
 <img src="assets/glendora-kitchen-cabinets-position-5.webp" alt="Google results with Glendora Kitchen Cabinets at position 5, under the Angie&#x27;s List and Yelp roundups." width="60%"> 
-
-[Read the full case study](https://www.searchprex.com/case-studies/remodeling/kitchen-cabinets)
 
 ## Certificates
 
@@ -156,7 +140,7 @@ From client work at previous employers. Screenshots are not published for these 
 
 | Role | Company | Dates |
 |---|---|---|
-| Founder | Searchprex and SEO Autopilot |  |
+| Founder | SEO Autopilot |  |
 | Lead SEO | Momento Digital Agency, Gujranwala | Apr 2026 to present |
 | SEO Team Lead | Time Technologies LLC, Lahore | Feb 2026 to Apr 2026 |
 | SEO Analyst | ADSCARRY LLC (USA), remote | Mar 2026 to Apr 2026 |
