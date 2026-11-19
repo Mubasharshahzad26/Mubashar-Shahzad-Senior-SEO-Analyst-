@@ -138,3 +138,60 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+// --- Semrush Stats Ladder Automated Cycle Animation ---
+(function initStatsLadderCycle() {
+  const ladderItems = document.querySelectorAll('.stats-ladder .ladder-item');
+  const descItems = document.querySelectorAll('.stats-descriptions-col .stat-desc-item');
+  
+  if (!ladderItems.length || !descItems.length) return;
+  
+  let currentIndex = 1; // start at Michigan Outdoor Sports item
+  let intervalId = null;
+  let isHovered = false;
+
+  function setActiveStat(idx) {
+    ladderItems.forEach((item, i) => {
+      if (i === idx) {
+        item.classList.remove('dim');
+        item.classList.add('active-card');
+      } else {
+        item.classList.remove('active-card');
+        item.classList.add('dim');
+      }
+    });
+
+    descItems.forEach((desc, i) => {
+      if (i === idx) {
+        desc.classList.add('active-desc');
+      } else {
+        desc.classList.remove('active-desc');
+      }
+    });
+  }
+
+  function nextStat() {
+    if (isHovered) return;
+    currentIndex = (currentIndex + 1) % ladderItems.length;
+    setActiveStat(currentIndex);
+  }
+
+  intervalId = setInterval(nextStat, 2800);
+
+  // Allow user hover/click to inspect
+  ladderItems.forEach((item, idx) => {
+    item.addEventListener('mouseenter', () => {
+      isHovered = true;
+      currentIndex = idx;
+      setActiveStat(idx);
+    });
+    item.addEventListener('mouseleave', () => {
+      isHovered = false;
+    });
+    item.addEventListener('click', () => {
+      currentIndex = idx;
+      setActiveStat(idx);
+    });
+  });
+})();
