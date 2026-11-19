@@ -311,12 +311,12 @@ img {
   align-items: center;
   gap: 0.55rem;
   padding: 0.35rem 0.95rem;
-  background: rgba(0, 223, 162, 0.12);
-  border: 1px solid rgba(0, 223, 162, 0.3);
+  background: #f0fdfa;
+  border: 1px solid #99f6e4;
   border-radius: var(--radius-full);
   font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--accent-mint);
+  font-weight: 700;
+  color: #0f766e;
   letter-spacing: 0.02em;
 }
 
@@ -478,7 +478,7 @@ img {
 }
 
 .trust-item svg {
-  color: var(--accent-mint);
+  color: #0d9488;
   flex-shrink: 0;
 }
 
@@ -587,13 +587,13 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: #ffffff;
-  border: 1px solid #a7f3d0;
+  background: #f0fdf4;
+  border: 1px solid #86efac;
   padding: 0.45rem 0.95rem;
   border-radius: 999px;
   font-size: 0.78rem;
   font-weight: 700;
-  color: #047857;
+  color: #065f46;
   box-shadow: 0 4px 12px rgba(16, 185, 129, 0.12);
 }
 
@@ -608,7 +608,7 @@ img {
 .floating-proof-badge span {
   font-size: 0.82rem;
   font-weight: 700;
-  color: var(--ink-inverse);
+  color: #065f46;
 }
 
 /* ==========================================================================
