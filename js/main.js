@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       navigator.clipboard.writeText(window.location.href).then(() => {
         const originalText = btn.innerHTML;
-        btn.innerHTML = '<span>âœ“ Copied!</span>';
+        btn.innerHTML = '<span>Copied!</span>';
         setTimeout(() => {
           btn.innerHTML = originalText;
         }, 2000);

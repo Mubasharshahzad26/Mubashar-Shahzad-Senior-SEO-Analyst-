@@ -1,6 +1,6 @@
 /* ==========================================================================
    MUBASHAR SHARIF | SENIOR SEO ANALYST PORTFOLIO
-   Design System Inspired by Semrush Enterprise & SearchPrex
+   Design System Inspired by Semrush Enterprise & Mubashar Sharif
    Typography: Space Grotesk (Display/Headings) + Inter (Body/UI)
    ========================================================================== */
 
@@ -1102,8 +1102,138 @@ img {
 }
 
 /* ==========================================================================
-   EDUCATION & CERTIFICATIONS
+   EDUCATION & CERTIFICATIONS (SEMRUSH SHOWCASE)
    ========================================================================== */
+.semrush-cert-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 860px) {
+  .semrush-cert-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.featured-cert-card {
+  background: var(--bg-light-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-cert-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: #ff642d;
+}
+
+.featured-cert-thumb {
+  position: relative;
+  background: #0f1117;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-light);
+  cursor: pointer;
+  overflow: hidden;
+  display: block;
+}
+
+.featured-cert-thumb img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  display: block;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+}
+
+.featured-cert-thumb:hover img {
+  transform: scale(1.02);
+}
+
+.cert-pill-overlay {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: rgba(15, 17, 23, 0.9);
+  color: #00dfa2;
+  border: 1px solid rgba(0, 223, 162, 0.4);
+  backdrop-filter: blur(8px);
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.featured-cert-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cert-meta-tagline {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ff642d;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+
+.featured-cert-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 0.75rem;
+  color: var(--ink-dark);
+}
+
+.cert-info-table {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  row-gap: 0.4rem;
+  column-gap: 1rem;
+  font-size: 0.825rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.cert-info-lbl {
+  color: var(--ink-muted);
+  font-weight: 500;
+}
+
+.cert-info-val {
+  color: var(--ink-dark);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.cert-action-btns {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.cert-action-btns .btn {
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  font-size: 0.825rem;
+  padding: 0.55rem 0.75rem;
+}
+
 .credentials-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
