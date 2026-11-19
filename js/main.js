@@ -137,6 +137,32 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // 7. Operative Search Bar — scroll to case studies
+  const searchBtn = document.querySelector('.semrush-search-btn');
+  const searchInput = document.getElementById('domainAuditInput');
+  const caseStudiesSection = document.getElementById('case-studies-preview');
+
+  function handleSearchAction(e) {
+    if (caseStudiesSection) {
+      e.preventDefault();
+      caseStudiesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      caseStudiesSection.style.transition = 'box-shadow 0.4s ease';
+      caseStudiesSection.style.boxShadow = '0 0 0 4px rgba(0, 221, 175, 0.35)';
+      setTimeout(() => {
+        caseStudiesSection.style.boxShadow = 'none';
+      }, 1800);
+    }
+  }
+
+  if (searchBtn) {
+    searchBtn.addEventListener('click', handleSearchAction);
+  }
+  if (searchInput) {
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') handleSearchAction(e);
+    });
+  }
 });
 
 
