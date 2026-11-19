@@ -69,9 +69,9 @@
 }
 
 .filter-pill {
-  background: var(--bg-light-surface);
-  color: var(--ink-secondary);
-  border: 1px solid var(--border-light);
+  background: #171b26;
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-full);
   padding: 0.55rem 1.25rem;
   font-size: 0.9rem;
@@ -81,15 +81,16 @@
 }
 
 .filter-pill:hover {
-  border-color: var(--primary-purple);
-  color: var(--ink-primary);
+  border-color: #00dfa2;
+  color: #ffffff;
 }
 
 .filter-pill.active {
-  background: #16181d;
-  color: #ffffff;
-  border-color: #16181d;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  background: #00dfa2;
+  color: #090a0f;
+  font-weight: 700;
+  border-color: #00dfa2;
+  box-shadow: 0 4px 14px rgba(0, 223, 162, 0.3);
 }
 
 /* ── Semrush-Style Case Study Cards Grid ── */
@@ -100,126 +101,160 @@
   margin-bottom: 5rem;
 }
 
+/* Case Study Card (Unified High-Contrast Design System) */
 .case-card {
+  background: #171b26 !important;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  color: inherit;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
 .case-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
+  border-color: rgba(0, 223, 162, 0.4) !important;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
 }
 
 .case-card-visual {
-  border-radius: var(--radius-lg);
-  padding: 2.2rem 2rem;
-  position: relative;
-  min-height: 250px;
+  background: #1e2434 !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.75rem;
+  min-height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
-  transition: box-shadow 0.3s ease;
 }
 
-.case-card:hover .case-card-visual {
-  box-shadow: var(--shadow-lg);
+.case-card-visual::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00dfa2, #06b6d4);
+  opacity: 0.8;
 }
 
 .card-top-row {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
 }
 
 .client-tag {
+  background: rgba(255, 255, 255, 0.09) !important;
+  color: #ffffff !important;
   font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 800;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   letter-spacing: -0.01em;
 }
 
 .card-badge {
+  background: rgba(0, 223, 162, 0.12) !important;
+  color: #00dfa2 !important;
+  border: 1px solid rgba(0, 223, 162, 0.3) !important;
   font-size: 0.72rem;
   font-weight: 700;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding: 0.3rem 0.75rem;
-  border-radius: var(--radius-full);
 }
 
 .card-metric-highlight {
-  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
 }
 
 .metric-big-num {
   font-family: var(--font-display);
-  font-size: 3rem;
+  font-size: 2.85rem;
   font-weight: 800;
+  color: #ffffff !important;
   line-height: 1;
   letter-spacing: -0.03em;
-  display: block;
 }
 
 .metric-sub-label {
   font-size: 0.85rem;
-  font-weight: 600;
-  opacity: 0.85;
+  color: #94a3b8 !important;
+  font-weight: 500;
   margin-top: 0.35rem;
 }
 
 .case-card-content {
-  padding: 1.5rem 0.5rem 0;
+  padding: 1.75rem;
+  background: #171b26 !important;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .case-card-meta {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  font-size: 0.78rem;
-  color: var(--ink-tertiary);
-  font-weight: 600;
+  font-size: 0.8rem;
+  color: #64748b;
+  font-weight: 500;
   margin-bottom: 0.65rem;
 }
 
 .case-card-title {
-  font-size: 1.18rem;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
   font-weight: 700;
-  line-height: 1.4;
-  color: var(--ink-primary);
+  line-height: 1.35;
+  color: #ffffff !important;
   margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
   transition: color 0.2s ease;
 }
 
 .case-card:hover .case-card-title {
-  color: var(--primary-purple);
+  color: #00dfa2 !important;
 }
 
 .case-card-summary {
   font-size: 0.92rem;
-  color: var(--ink-secondary);
-  line-height: 1.55;
-  margin-bottom: 1rem;
+  color: #94a3b8 !important;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
 }
 
 .case-card-link {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 0.88rem;
+  font-size: 0.875rem;
   font-weight: 700;
-  color: var(--primary-purple);
+  color: #00dfa2 !important;
   margin-top: auto;
+  transition: transform 0.2s ease;
 }
 
 .case-card-link svg {
   transition: transform 0.2s ease;
 }
 
-.case-card:hover .case-card-link svg {
+.case-card:hover .case-card-link {
   transform: translateX(4px);
 }
 
