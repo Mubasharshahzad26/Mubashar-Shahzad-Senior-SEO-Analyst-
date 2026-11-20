@@ -17,7 +17,7 @@ I'm Mubashar Sharif, a Senior SEO Analyst and the founder of SEO Autopilot, with
 
 ## SEO Autopilot: founder and builder
 
-SEO Autopilot is the system I built to fix thin product and brand pages across a whole catalog. It checks each product first, so a page with no photo, no price or nothing to buy is skipped. It then writes unique copy with AI, scores it, publishes to WordPress, and submits the URL for indexing, under a daily publishing cap.
+SEO Autopilot is the system I built to fix thin product and brand pages across a whole catalog. It checks each product first, so a page with no photo, no price or nothing to buy is skipped. It then writes unique copy with AI, scores it, and publishes to WordPress under a daily publishing cap.
 
 **Used on Michigan Outdoor Sports, where indexed pages grew from about 4,000 to 12.2K by 21 August 2026.**
 
@@ -104,17 +104,6 @@ Each result is backed by original screenshots from Google Search Console, WooCom
 
 <img src="assets/door-doctor-business-profile-performance.webp" alt="Google Business Profile Performance report showing 490 interactions for April to May 2025." width="60%"> 
 
-### Glendora Kitchen Cabinets
-
-*Local SEO · Glendora, CA*
-
-**Position 5 on Google for "kitchen cabinet replacement in Glendora".**
-
-- **Problem:** No rankings for remodel and cabinet searches, and a business relying on referrals.
-- **What I did:** Researched high-intent local terms, rebuilt on-page SEO and created content for Glendora and nearby cities.
-
-<img src="assets/glendora-kitchen-cabinets-position-5.webp" alt="Google results with Glendora Kitchen Cabinets at position 5, under the Angie&#x27;s List and Yelp roundups." width="60%"> 
-
 ## Certificates
 
 - [SEO Fundamentals](https://static.semrush.com/academy/certificates/e45cf0b323/mubashar-shahzad_25.pdf), Semrush
@@ -141,12 +130,12 @@ From client work at previous employers. Screenshots are not published for these 
 | Role | Company | Dates |
 |---|---|---|
 | Founder | SEO Autopilot |  |
-| Lead SEO | Momento Digital Agency, Gujranwala | Apr 2026 to present |
-| SEO Team Lead | Time Technologies LLC, Lahore | Feb 2026 to Apr 2026 |
-| SEO Analyst | ADSCARRY LLC (USA), remote | Mar 2026 to Apr 2026 |
-| SEO Project Lead | OrlandoWebPros (USA), remote | Feb 2026 to Apr 2026 |
-| SEO Team Lead | 321Groww, Gujrat | Mar 2025 to Aug 2025 |
-| SEO Team Lead, earlier SEO Executive | Remit Choice Limited, Gujranwala | Apr 2023 to Jan 2026 |
+| SEO Manager | Momento Digital Agency, Gujranwala | Feb 2026 to Mar 2026 (part-time), Apr 2026 to Oct 2026 (full-time) |
+| SEO Team Lead | Time Technologies LLC, Lahore | Jan 2026 to Apr 2026 |
+| SEO Analyst | ADSCARRY LLC (USA), remote | Feb 2026 to Mar 2026 |
+| SEO Project Lead | OrlandoWebPros (USA), remote | Feb 2026 to Mar 2026 |
+| SEO Team Lead | 321Groww, Gujrat | Sep 2024 to Aug 2025 |
+| SEO Team Lead (Apr 2024 to Jan 2026), earlier SEO Executive (Apr 2023 to Mar 2024) | Remit Choice Limited, Gujranwala | Apr 2023 to Jan 2026 |
 
 ## Education
 

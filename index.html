@@ -28,9 +28,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Space+Grotesk:wght@700;800&family=Inter:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css?v=8">
-  <link rel="stylesheet" href="css/semrush-style.css?v=8">
-  <link rel="stylesheet" href="css/case-study.css?v=8">
+  <link rel="stylesheet" href="css/style.css?v=9">
+  <link rel="stylesheet" href="css/semrush-style.css?v=9">
+  <link rel="stylesheet" href="css/case-study.css?v=9">
+  <link rel="stylesheet" href="css/portfolio.css?v=9">
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -51,30 +52,27 @@
 </head>
 <body>
 
-  <!-- Top Glassmorphic Navigation -->
   <header class="site-header">
     <div class="container nav-wrapper">
       <a href="index.html" class="brand-badge">
         <img src="assets/images/mubashar-sharif-seo-analyst.jpg" alt="Mubashar Sharif" class="brand-avatar">
         <div class="brand-info">
           <span class="brand-name">Mubashar Sharif</span>
-          <span class="brand-title">Senior SEO Analyst (5+ Years)</span>
+          <span class="brand-title">Senior SEO Analyst</span>
         </div>
       </a>
-
       <nav>
         <ul class="nav-links">
-          <li><a href="#capabilities" class="nav-link">Capabilities</a></li>
-          <li><a href="#stats" class="nav-link">Stats &amp; Proof</a></li>
-          <li><a href="#ai-visibility" class="nav-link">AI Visibility</a></li>
-          <li><a href="#reviews" class="nav-link">Reviews</a></li>
-          <li><a href="#case-studies-preview" class="nav-link" style="color: var(--accent-mint); font-weight: 700;">Case Studies (8)</a></li>
+          <li><a href="#work" class="nav-link">Case Studies</a></li>
           <li><a href="#autopilot" class="nav-link">SEO Autopilot</a></li>
+          <li><a href="#ai-visibility" class="nav-link">AI Search</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#credentials" class="nav-link">Credentials</a></li>
         </ul>
       </nav>
-
       <div class="nav-actions">
-        <a href="case-studies/index.html" class="btn btn-mint btn-sm">Case Studies &rarr;</a>
+        <a href="mailto:mubasharshahzad726@gmail.com" class="btn btn-mint btn-sm">Contact</a>
         <a href="Mubashar_Sharif_CV.pdf" download class="btn btn-secondary btn-sm" target="_blank">CV (PDF)</a>
         <button class="mobile-toggle" aria-label="Toggle navigation">
           <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -83,657 +81,57 @@
     </div>
   </header>
 
-  <!-- Semrush.com Inspired Enterprise Hero Section -->
-  <section class="semrush-hero" id="overview">
-    <div class="container semrush-hero-inner">
-      
-      <div class="semrush-hero-pill">
-        <span class="pill-dot"></span>
-        Enterprise Search &amp; AI Visibility &bull; Senior SEO Analyst
-      </div>
-
-      <h1 class="semrush-hero-h1">
-        Be found and chosen everywhere search happens
-      </h1>
-
-      <p class="semrush-hero-sub">
-        Senior SEO Analyst with 5+ years driving measurable brand visibility and qualified pipeline &mdash; from organic search engines to AI citations. Specializing in Technical SEO, eCommerce revenue turnarounds, and programmatic indexing.
-      </p>
-
-      <!-- Signature Semrush Pill Search / Free Domain Authority & SEO Health Checker -->
-      <div class="semrush-search-bar" id="auditSearchWrapper">
-        <div class="search-input-wrapper">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7047eb" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="text" placeholder="Enter your website domain (e.g. yourbrand.com)..." class="semrush-input" id="domainAuditInput">
-        </div>
-        <button type="button" class="semrush-search-btn" id="runDomainAuditBtn">
-          <span>Run Free Audit &rarr;</span>
-        </button>
-      </div>
-
-      <!-- Live Audit Scanner Box (Hidden initially) -->
-      <div id="auditLiveScanner" class="audit-live-scanner" style="display: none;">
-        <div class="scanner-progress-bar">
-          <div class="scanner-progress-fill" id="scannerProgressFill"></div>
-        </div>
-        <div class="scanner-step-text" id="scannerStepText">
-          Querying global link graph &amp; domain trust metrics...
-        </div>
-      </div>
-
-      <!-- Live Audit Results Card (Hidden initially) -->
-      <div id="auditResultCard" class="audit-result-card" style="display: none;">
-        <div class="audit-card-header">
-          <div class="audit-target-domain">
-            <span class="audit-tag">Domain Health &amp; Authority Report</span>
-            <h3 id="auditResultDomainName">yourbrand.com</h3>
-          </div>
-          <button type="button" class="audit-close-btn" id="auditResetBtn">&times; Audit Another</button>
-        </div>
-
-        <div class="audit-metrics-row">
-          <div class="audit-metric-box">
-            <div class="metric-num" id="auditDaScore">34</div>
-            <div class="metric-title">Domain Authority (DA)</div>
-            <div class="metric-status status-good" id="auditDaStatus">Good Growth Potential</div>
-          </div>
-          <div class="audit-metric-box">
-            <div class="metric-num" id="auditHealthScore">82%</div>
-            <div class="metric-title">Technical SEO Health</div>
-            <div class="metric-status status-high" id="auditHealthStatus">Strong Crawl Index</div>
-          </div>
-          <div class="audit-metric-box">
-            <div class="metric-num" id="auditTopicalScore">58%</div>
-            <div class="metric-title">Topical Authority</div>
-            <div class="metric-status status-growing" id="auditTopicalStatus">Expansion Opportunity</div>
-          </div>
-          <div class="audit-metric-box">
-            <div class="metric-num" id="auditAiScore">24%</div>
-            <div class="metric-title">AI Search Visibility</div>
-            <div class="metric-status status-alert" id="auditAiStatus">Unclaimed Citations</div>
-          </div>
-        </div>
-
-        <div class="audit-findings-strip">
-          <div class="audit-finding-item">
-            <span class="finding-icon">&bull;</span>
-            <span id="auditFinding1">Technical Schema: Missing Product / LocalBusiness JSON-LD markup on core commercial pages.</span>
-          </div>
-          <div class="audit-finding-item">
-            <span class="finding-icon">&bull;</span>
-            <span id="auditFinding2">Index Waste: Deep category and faceted navigation causing crawl budget leakage.</span>
-          </div>
-          <div class="audit-finding-item">
-            <span class="finding-icon">&bull;</span>
-            <span id="auditFinding3">AI Citation Gap: Brand not yet cited as top recommendation in Google AI Overviews.</span>
-          </div>
-        </div>
-
-        <div class="audit-card-footer">
-          <a href="https://www.linkedin.com/in/mubashar-sharif-senior-seo-analyst/" target="_blank" rel="noopener" class="audit-cta-btn">
-            Consult Mubashar Sharif to Fix Gaps &rarr;
-          </a>
-          <a href="#case-studies-preview" class="audit-secondary-link">
-            See How I Solved Similar Issues in 8 Case Studies &darr;
-          </a>
-        </div>
-      </div>
-
-      <!-- Semrush Two-Card Hero Row -->
-      <div class="semrush-hero-cards">
-        
-        <!-- Left Card: Semrush One Purple Gradient Style -->
-        <div class="semrush-hero-card-purple">
-          <div>
-            <h3>Get found in search and AI answers.</h3>
-            <p>Powered by 5+ years of verified Search Console data, eCommerce turnarounds, and programmatic indexing architecture.</p>
-            <a href="case-studies/index.html" class="semrush-btn-white">
-              Explore 8 Case Studies &rarr;
-            </a>
-          </div>
-          <div class="semrush-card-graphic">
-            <div class="graphic-logo">SEO Core</div>
-            <div class="graphic-sub">Search Console Proof</div>
-          </div>
-        </div>
-
-        <!-- Right Card: Semrush AI / Clean White Style -->
-        <div class="semrush-hero-card-white">
-          <div>
-            <h3>Ask AI. Get verified data.</h3>
-            <p>Bring live technical SEO audits, entity signals, and keyword rankings into ChatGPT, Gemini, Perplexity, and Google AI Overviews.</p>
-          </div>
-          <a href="Mubashar_Sharif_CV.pdf" download target="_blank" class="semrush-btn-outline">
-            Download Full CV (PDF) &rarr;
-          </a>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Semrush Social Proof Brand Bar -->
-  <section class="semrush-brand-bar">
-    <div class="container">
-      <div style="font-size: 0.8rem; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.08em; text-align: center; margin-bottom: 1.5rem;">
-        Delivered High-Impact Technical, E-Commerce &amp; Local SEO For
-      </div>
-      <div class="marquee-container">
-        <div class="marquee-track">
-          <!-- Set 1 -->
-          <div class="marquee-item">
-            <span>SMK Store</span>
-            <span class="brand-sub">E-Commerce (+227%)</span>
-          </div>
-          <div class="marquee-divider">&bull;</div>
-
-          <div class="marquee-item">
-            <span>Michigan Outdoor Sports</span>
-            <span class="brand-sub">12.2K URLs</span>
-          </div>
-          <div class="marquee-divider">&bull;</div>
-
-          <div class="marquee-item">
-            <span>Remit Choice</span>
-            <span class="brand-sub">#1 Rank Fintech</span>
-          </div>
-          <div class="marquee-divider">&bull;</div>
-
-          <div class="marquee-item">
-            <span>Doll's Cleaning</span>
-            <span class="brand-sub">Top 3 Map Pack</span>
-          </div>
-          <div class="marquee-divider">&bull;</div>
-
-          <div class="marquee-item">
-            <span>HVAC Services Team</span>
-            <span class="brand-sub">AI Overview Cited</span>
-          </div>
-          <div class="marquee-divider">&bull;</div>
-
-          <div class="marquee-item">
-            <span>Mammoth Roofing</span>
-            <span class="brand-sub">Commercial Scale</span>
-          </div>
-          <div class="marquee-divider">&bull;</div>
-
-          <div class="marquee-item">
-            <span>Door Doctor</span>
-            <span class="brand-sub">B2B Lead Pipeline</span>
-          </div>
-          <div class="marquee-divider">&bull;</div>
-
-          <div class="marquee-item">
-            <span>Glendora Cabinets</span>
-            <span class="brand-sub">3.4x Foot Traffic</span>
-          </div>
-          <div class="marquee-divider">&bull;</div>
-
-          <!-- Set 2 (Duplicate for Seamless Infinite Marquee Loop) -->
-          <div class="marquee-item">
-            <span>SMK Store</span>
-            <span class="brand-sub">E-Commerce (+227%)</span>
-          </div>
-          <div class="marquee-divider">&bull;</div>
-
-          <div class="marquee-item">
-            <span>Michigan Outdoor Sports</span>
-            <span class="brand-sub">12.2K URLs</span>
-          </div>
-          <div class="marquee-divider">&bull;</div>
-
-          <div class="marquee-item">
-            <span>Remit Choice</span>
-            <span class="brand-sub">#1 Rank Fintech</span>
-          </div>
-          <div class="marquee-divider">&bull;</div>
-
-          <div class="marquee-item">
-            <span>Doll's Cleaning</span>
-            <span class="brand-sub">Top 3 Map Pack</span>
-          </div>
-          <div class="marquee-divider">&bull;</div>
-
-          <div class="marquee-item">
-            <span>HVAC Services Team</span>
-            <span class="brand-sub">AI Overview Cited</span>
-          </div>
-          <div class="marquee-divider">&bull;</div>
-
-          <div class="marquee-item">
-            <span>Mammoth Roofing</span>
-            <span class="brand-sub">Commercial Scale</span>
-          </div>
-          <div class="marquee-divider">&bull;</div>
-
-          <div class="marquee-item">
-            <span>Door Doctor</span>
-            <span class="brand-sub">B2B Lead Pipeline</span>
-          </div>
-          <div class="marquee-divider">&bull;</div>
-
-          <div class="marquee-item">
-            <span>Glendora Cabinets</span>
-            <span class="brand-sub">3.4x Foot Traffic</span>
-          </div>
-          <div class="marquee-divider">&bull;</div>
-        </div>
-      </div>
-
-      <!-- Semrush Enterprise Black Banner Card ("Bigger scale. Bigger advantage.") -->
-      <div class="semrush-enterprise-banner">
-        <div class="enterprise-content">
-          <h2>Bigger scale.<br>Bigger advantage.</h2>
-          <p>
-            Senior SEO analysis for enterprise brands means search visibility dominance. Win more customers across high-intent queries and AI answers. Everywhere they search.
-          </p>
-          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <a href="case-studies/index.html" class="btn-enterprise-pill">Explore Case Studies &rarr;</a>
-            <a href="Mubashar_Sharif_CV.pdf" download target="_blank" class="btn-enterprise-pill" style="border-color: rgba(255,255,255,0.3); color: #cbd5e1 !important;">Download CV (PDF)</a>
-          </div>
-        </div>
-
-        <!-- Dashboard Mockup -->
-        <div class="enterprise-dashboard-preview">
-          <div class="dashboard-preview-header">
-            <div class="dashboard-title">Live Performance Overview</div>
-            <div class="dashboard-tag">Verified GSC Proof</div>
-          </div>
-          <div class="dashboard-stat-row">
-            <div class="dash-stat-box">
-              <div class="dash-stat-label">Net Sales Growth</div>
-              <div class="dash-stat-val highlight">+227%</div>
-            </div>
-            <div class="dash-stat-box">
-              <div class="dash-stat-label">Indexed Product URLs</div>
-              <div class="dash-stat-val">12.2K</div>
-            </div>
-            <div class="dash-stat-box">
-              <div class="dash-stat-label">Fintech Corridor</div>
-              <div class="dash-stat-val highlight">#1 Rank</div>
-            </div>
-          </div>
-          <div class="dashboard-mini-chart">
-            <div class="chart-legend">
-              <span class="legend-item"><span class="dot-mint"></span> Client Organic Growth</span>
-              <span class="legend-item"><span class="dot-purple"></span> Market Share of Voice</span>
-              <span class="legend-item"><span class="dot-amber"></span> Competitor Avg</span>
-            </div>
-            <div class="chart-bars-mock">
-              <div class="chart-bar" style="height: 35%;"></div>
-              <div class="chart-bar" style="height: 48%;"></div>
-              <div class="chart-bar" style="height: 42%;"></div>
-              <div class="chart-bar" style="height: 65%;"></div>
-              <div class="chart-bar" style="height: 78%;"></div>
-              <div class="chart-bar active" style="height: 98%;"></div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- Capabilities Section: GET SEEN. GET CITED. BE THE ANSWER. -->
-  <section class="semrush-capabilities-section" id="capabilities">
-    <div class="container">
-      <div class="capabilities-header">
-        <div>
-          <span class="semrush-eyebrow">Enterprise SEO Capabilities</span>
-          <h2 class="semrush-section-title">GET SEEN. GET CITED.<br>BE THE ANSWER.</h2>
-        </div>
-        <p class="semrush-section-desc">
-          Modern search requires more than standard keywords. It demands technical site integrity, programmatic content architecture, and entity optimization for AI models.
+  <section class="pf-hero" id="overview">
+    <div class="container pf-hero-grid">
+      <div class="pf-hero-copy">
+        <div class="pf-kicker">Senior SEO Analyst · Founder, SEO Autopilot</div>
+        <h1 class="pf-h1">
+          <span class="pf-name">Mubashar Sharif</span>
+          <span class="pf-role">Senior SEO Analyst (5+ Years) | Technical, Local &amp; Ecommerce SEO | AI Search (GEO/AEO) | AI SEO Autopilot Builder</span>
+        </h1>
+        <p class="pf-summary">
+          I help businesses grow by turning Google Search and AI visibility into qualified leads and measurable revenue. 5+ years of hands-on technical, eCommerce and local SEO for clients in the USA, UK, UAE and Pakistan, backed by original Search Console, WooCommerce and Business Profile screenshots.
         </p>
+        <div class="pf-actions">
+          <a href="#work" class="btn btn-mint btn-lg">View case studies &darr;</a>
+          <a href="Mubashar_Sharif_CV.pdf" download target="_blank" class="btn btn-outline-dark btn-lg">Download CV (PDF)</a>
+          <a href="mailto:mubasharshahzad726@gmail.com" class="btn btn-outline-dark btn-lg">Email me</a>
+        </div>
+        <div class="pf-meta">
+          <span>Daska, Punjab, Pakistan · Works US business hours</span>
+          <a href="https://www.linkedin.com/in/mubashar-sharif-senior-seo-analyst/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
       </div>
-
-      <div class="semrush-cap-grid">
-        
-        <!-- Card 1: SMK Store -->
-        <a href="case-studies/smk-store/index.html" class="semrush-cap-card" title="View SMK Store Case Study">
-          <div class="cap-card-top">
-            <span class="cap-tag">Google &amp; AI Visibility</span>
-            <div class="cap-plus-circle">&rarr;</div>
-          </div>
-          <div class="cap-card-title">Rank on Google and get recommended by AI answers</div>
-          <div class="cap-card-chart-mock">
-            <div class="chart-mock-label">SMK Store eCommerce Net Sales</div>
-            <div class="chart-mock-number highlight-mint">+227% ($19.1K/mo)</div>
-          </div>
-        </a>
-
-        <!-- Card 2: Michigan Outdoor Sports -->
-        <a href="case-studies/michigan-outdoor-sports/index.html" class="semrush-cap-card tint-purple" title="View Michigan Outdoor Sports Case Study">
-          <div class="cap-card-top">
-            <span class="cap-tag">Technical Architecture</span>
-            <div class="cap-plus-circle">&rarr;</div>
-          </div>
-          <div class="cap-card-title">Build the technical foundation for enterprise scale</div>
-          <div class="cap-card-chart-mock">
-            <div class="chart-mock-label">Michigan Outdoor Sports Crawl Health</div>
-            <div class="chart-mock-number">12,200 Indexed URLs</div>
-          </div>
-        </a>
-
-        <!-- Card 3: HVAC Services Team -->
-        <a href="case-studies/hvac-services-team/index.html" class="semrush-cap-card tint-blue" title="View HVAC Services Team Case Study">
-          <div class="cap-card-top">
-            <span class="cap-tag">GEO / LLM Optimization</span>
-            <div class="cap-plus-circle">&rarr;</div>
-          </div>
-          <div class="cap-card-title">Get LLMs to cite your brand in ChatGPT &amp; Perplexity</div>
-          <div class="cap-card-chart-mock">
-            <div class="chart-mock-label">HVAC Services Clawson AI Overview</div>
-            <div class="chart-mock-number highlight-mint">Primary Source Citation</div>
-          </div>
-        </a>
-
-        <!-- Card 4: Remit Choice -->
-        <a href="case-studies/remit-choice/index.html" class="semrush-cap-card tint-blue" title="View Remit Choice Case Study">
-          <div class="cap-card-top">
-            <span class="cap-tag">Competitive Conquesting</span>
-            <div class="cap-plus-circle">&rarr;</div>
-          </div>
-          <div class="cap-card-title">Outrank multinational fintech giants on zero-fee corridors</div>
-          <div class="cap-card-chart-mock">
-            <div class="chart-mock-label">Remit Choice Search Ranking</div>
-            <div class="chart-mock-number">Rank #1 (Above Wise &amp; Xoom)</div>
-          </div>
-        </a>
-
-        <!-- Card 5: Programmatic / SEO Autopilot -->
-        <a href="#autopilot" class="semrush-cap-card" title="Explore SEO Autopilot Architecture">
-          <div class="cap-card-top">
-            <span class="cap-tag">Programmatic Systems</span>
-            <div class="cap-plus-circle">&rarr;</div>
-          </div>
-          <div class="cap-card-title">Craft programmatic and AI-ready catalog pipelines</div>
-          <div class="cap-card-chart-mock">
-            <div class="chart-mock-label">SEO Autopilot Automated Pipeline</div>
-            <div class="chart-mock-number highlight-mint">100% Real-Time Indexing</div>
-          </div>
-        </a>
-
-        <!-- Card 6: Doll's Cleaning -->
-        <a href="case-studies/dolls-cleaning/index.html" class="semrush-cap-card tint-purple" title="View Doll's Cleaning Case Study">
-          <div class="cap-card-top">
-            <span class="cap-tag">Local Multi-Location SEO</span>
-            <div class="cap-plus-circle">&rarr;</div>
-          </div>
-          <div class="cap-card-title">Dominate multi-location Google Maps &amp; local intent</div>
-          <div class="cap-card-chart-mock">
-            <div class="chart-mock-label">Doll's Cleaning Oakland County</div>
-            <div class="chart-mock-number">Top 3 Map Pack Dominance</div>
-          </div>
-        </a>
-
-      </div>
+      <aside class="pf-hero-side">
+        <img src="assets/mubashar-sharif-senior-seo-analyst.webp" alt="Mubashar Sharif, Senior SEO Analyst" class="pf-photo" width="320" height="320">
+        <ul class="pf-focus">
+          <li>Technical SEO and indexation</li>
+          <li>eCommerce and WooCommerce SEO</li>
+          <li>Local SEO and Business Profiles</li>
+          <li>AI search: GEO, AEO and AI Overviews</li>
+        </ul>
+      </aside>
     </div>
   </section>
 
-
-  <!-- Semrush STATS AND FACTS Vertical Ladder Section -->
-    <!-- Semrush STATS AND FACTS Vertical Ladder Section -->
-  <section class="semrush-stats-section" id="stats">
-    <div class="container">
-      <div style="margin-bottom: 3.5rem;">
-        <span class="semrush-eyebrow">Stats and Facts</span>
-        <h2 class="semrush-section-title">THE DATA YOU NEED TO<br>OUTRANK THE COMPETITION</h2>
-      </div>
-
-      <div class="semrush-stats-grid">
-        
-        <!-- Left Side: Vertical Ladder (Cycling Animation) -->
-        <div class="stats-ladder">
-          <div class="ladder-item dim">
-            <div class="ladder-stat">&uarr; $19.1K</div>
-            <div class="ladder-label">Monthly Net Sales (SMK Store)</div>
-          </div>
-
-          <div class="ladder-item active-card">
-            <div class="ladder-stat">&uarr; 8.5K Imp &bull; +383% Clicks</div>
-            <div class="ladder-label">GSC Verified Comparison (Michigan Outdoor Sports)</div>
-          </div>
-
-          <div class="ladder-item dim">
-            <div class="ladder-stat">#1 Rank</div>
-            <div class="ladder-label">Above Wise &amp; Xoom on Remittance Corridors</div>
-          </div>
-
-          <div class="ladder-item dim">
-            <div class="ladder-stat">100%</div>
-            <div class="ladder-label">Automated Google Indexing API Success Rate</div>
-          </div>
-
-          <div class="ladder-item dim">
-            <div class="ladder-stat">5+ Years</div>
-            <div class="ladder-label">Enterprise Senior SEO Analyst Experience</div>
-          </div>
-        </div>
-
-        <!-- Right Side: Descriptive Explanations (Synchronized with Ladder) -->
-        <div class="stats-descriptions-col">
-          <div class="stat-desc-item">
-            <h4>E-Commerce Revenue Turnaround ($5.8K to $19.1K).</h4>
-            <p>Diagnosed faceted taxonomy bloat, optimized 35,000 product SKUs, and captured commercial intent queries &mdash; surging net monthly sales by +227% in 60 days with verified WooCommerce revenue proof.</p>
-          </div>
-
-          <div class="stat-desc-item active-desc">
-            <h4>+1,631% Impressions (8.5K) &amp; +383% Clicks (66 to 319).</h4>
-            <p>Official Google Search Console performance comparison for Michigan Sports &amp; Outdoor &mdash; jumping average SERP position from 18.0 to 11.3 and indexing 12.2K catalog SKUs to restore daily warehouse order fulfillment.</p>
-          </div>
-
-          <div class="stat-desc-item">
-            <h4>Outranking Fintech Giants on Competitive Corridors (#1 Rank).</h4>
-            <p>Pioneered hyper-targeted corridor architecture for zero-fee international remittance, capturing #1 organic positions over multi-billion dollar competitors like Wise, Xoom, and Western Union.</p>
-          </div>
-
-          <div class="stat-desc-item">
-            <h4>High-scale automated indexing architecture (100% Success).</h4>
-            <p>Engineered SEO Autopilot with automated Google Indexing API pipelines to eliminate crawl backlog, index dynamic catalogs in real-time, and guarantee zero index waste.</p>
-          </div>
-
-          <div class="stat-desc-item">
-            <h4>5+ Years of Proven Senior SEO Analyst Experience.</h4>
-            <p>Hands-on track record across the USA, UK, UAE, and Pakistan delivering technical site architecture, generative AI search optimization (GEO), and multi-location map dominance.</p>
-          </div>
-
-          <div style="padding-top: 1rem;">
-            <a href="case-studies/index.html" class="btn btn-primary-hero">
-              Explore All 8 Detailed Case Studies &rarr;
-            </a>
-          </div>
-        </div>
-
-      </div>
-
+  <section class="pf-kpis" aria-label="Key results">
+    <div class="container pf-kpi-grid">
+      <div class="pf-kpi"><strong>+227%</strong><span>Monthly net sales, SMK Store (35,000 products)</span></div>
+      <div class="pf-kpi"><strong>12.2K</strong><span>Pages indexed, up from about 4,000, Michigan Outdoor Sports</span></div>
+      <div class="pf-kpi"><strong>#1</strong><span>Above Wise and Xoom, Remit Choice (113K clicks in 2024)</span></div>
+      <div class="pf-kpi"><strong>46,000+</strong><span>Product pages covered by programmatic SEO</span></div>
+      <div class="pf-kpi"><strong>5+ yrs</strong><span>Hands-on SEO, teams of up to 8</span></div>
     </div>
   </section>
 
-
-  <!-- Semrush AI Visibility Index Section -->
-    <!-- Semrush AI Visibility Index Section (Verified AI Overview Citations Only) -->
-  <section class="semrush-ai-index-section" id="ai-visibility">
-    <div class="container" style="position: relative; z-index: 10;">
-      
-      <div class="ai-index-header">
-        <span class="semrush-eyebrow" style="color: #00dfa2;">Generative Engine Optimization (GEO) &bull; Live Semrush Data</span>
-        <h2>AI VISIBILITY INDEX</h2>
-        <p>
-          Verified tracking of brands cited directly inside Google AI Overviews, ChatGPT, and Gemini. Backed by live Semrush AI Search data.
-        </p>
-      </div>
-
-      <!-- Live Semrush AI Search Metrics Card (Remit Choice Verified) -->
-      <div class="ai-score-card">
-        <div class="ai-score-donut">
-          <div class="ai-score-num">15</div>
-          <div class="ai-score-label">Semrush AI Visibility Score</div>
-          <div style="font-size: 0.72rem; color: #cbd5e1; margin-top: 0.4rem;">remitchoice.com (Live)</div>
-        </div>
-
-        <div class="ai-breakdown-grid">
-          <div class="ai-breakdown-box">
-            <div class="ai-breakdown-title">
-              <svg width="12" height="12" fill="#00dfa2" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/></svg>
-              Google AI Overview
-            </div>
-            <div class="ai-breakdown-val">21 Mentions</div>
-            <div class="ai-breakdown-sub">34 Cited Pages</div>
-          </div>
-
-          <div class="ai-breakdown-box">
-            <div class="ai-breakdown-title">
-              <svg width="12" height="12" fill="#10a37f" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/></svg>
-              ChatGPT
-            </div>
-            <div class="ai-breakdown-val">17 Mentions</div>
-            <div class="ai-breakdown-sub">31 Cited Pages</div>
-          </div>
-
-          <div class="ai-breakdown-box">
-            <div class="ai-breakdown-title">
-              <svg width="12" height="12" fill="#4285f4" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/></svg>
-              Google AI Mode
-            </div>
-            <div class="ai-breakdown-val">18 Mentions</div>
-            <div class="ai-breakdown-sub">11 Cited Pages</div>
-          </div>
-
-          <div class="ai-breakdown-box">
-            <div class="ai-breakdown-title">
-              <svg width="12" height="12" fill="#a855f7" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/></svg>
-              Google Gemini
-            </div>
-            <div class="ai-breakdown-val">17 Mentions</div>
-            <div class="ai-breakdown-sub">14 Cited Pages</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- AI Table Card: ONLY Verified Google AI Overview Clients -->
-      <div class="ai-index-table-card">
-        <div class="ai-table-top">
-          <span>Target Corridor / Local Entity</span>
-          <span>Google AI Overview Citation Status</span>
-          <span>Rank &bull; Inclusion</span>
-        </div>
-
-        <!-- 1. Remit Choice -->
-        <div class="ai-table-row">
-          <div class="ai-table-brand">
-            <strong>Remit Choice</strong>
-            <span style="font-size: 0.75rem; color: #64748b;">Zero-Fee UK to PK Corridor</span>
-          </div>
-          <div class="ai-table-bar-wrapper">
-            <div class="ai-table-bar" style="width: 95%;"></div>
-          </div>
-          <div class="ai-table-metric" style="color: #0d9488;">Rank #1 Cited</div>
-        </div>
-
-        <!-- 2. HVAC Services Team -->
-        <div class="ai-table-row">
-          <div class="ai-table-brand">
-            <strong>HVAC Services Team</strong>
-            <span style="font-size: 0.75rem; color: #64748b;">Commercial HVAC Clawson MI</span>
-          </div>
-          <div class="ai-table-bar-wrapper">
-            <div class="ai-table-bar" style="width: 92%;"></div>
-          </div>
-          <div class="ai-table-metric" style="color: #0d9488;">AI Overview Source</div>
-        </div>
-
-        <!-- 3. Doll's Cleaning -->
-        <div class="ai-table-row">
-          <div class="ai-table-brand">
-            <strong>Doll's Cleaning</strong>
-            <span style="font-size: 0.75rem; color: #64748b;">Oakland County Residential</span>
-          </div>
-          <div class="ai-table-bar-wrapper">
-            <div class="ai-table-bar" style="width: 88%;"></div>
-          </div>
-          <div class="ai-table-metric" style="color: #0d9488;">AI Overview + Map</div>
-        </div>
-      </div>
-
-      <div style="text-align: center; margin-top: 2rem;">
-        <a href="case-studies/hvac-services-team/index.html" class="btn-enterprise-pill" style="border-color: #00dfa2; color: #00dfa2 !important;">
-          Explore Google AI Overview Case Study &rarr;
-        </a>
-      </div>
-
-    </div>
-
-    <div class="semrush-spectrum-lines"></div>
-  </section>
-
-
-  <!-- Customer Reviews & Trustpilot Section: HOW WE HELP CLIENTS WIN -->
-    <!-- Customer Reviews & Trustpilot Section: HOW I HELP CLIENTS WIN -->
-  <section class="semrush-reviews-section" id="reviews">
-    <div class="container">
-      <div class="reviews-header text-center" style="max-width: 760px; margin: 0 auto 3rem;">
-        <span class="semrush-eyebrow">Client Feedback &amp; Verification</span>
-        <h2 class="semrush-section-title">HOW I HELP CLIENTS WIN</h2>
-        <p class="semrush-section-desc" style="margin: 0 auto;">
-          Direct, verified feedback from e-commerce leadership who experienced tangible revenue growth through technical and programmatic SEO.
-        </p>
-      </div>
-
-      <!-- Single Featured Verified Review: Michigan Sports & Outdoor Inc -->
-      <div style="max-width: 840px; margin: 0 auto;">
-        <div class="semrush-review-card" style="border-width: 2px; border-color: #e2e8f0; padding: 3rem;">
-          <div>
-            <div class="review-stars-row" style="margin-bottom: 1.5rem;">
-              <span class="trustpilot-star"></span>
-              <span class="trustpilot-star"></span>
-              <span class="trustpilot-star"></span>
-              <span class="trustpilot-star"></span>
-              <span class="trustpilot-star"></span>
-              <span style="font-size: 0.9rem; font-weight: 800; color: #00b67a; margin-left: 0.65rem;">5.0 / 5.0 Star Verified Rating</span>
-            </div>
-            <p class="review-quote" style="font-size: 1.25rem; line-height: 1.7; color: #090a0f; font-weight: 550;">
-              &ldquo;Highly recommend for any e-commerce business looking to scale. They are an expert at optimizing for competitive retail niches and have helped Michigan Sports Outdoor substantially increase our online visibility. Very professional, results-oriented, and easy to work with.&rdquo;
-            </p>
-          </div>
-          <div class="review-footer" style="padding-top: 1.75rem; margin-top: 1rem;">
-            <div class="reviewer-info">
-              <h4 style="font-size: 1.25rem; font-weight: 800; color: #090a0f;">Michigan Sports &amp; Outdoor Inc</h4>
-              <div class="reviewer-meta" style="font-size: 0.9rem; margin-top: 0.2rem;">E-Commerce Business &bull; USA &bull; 17 July 2026</div>
-              <div style="margin-top: 0.5rem;">
-                <span class="trustpilot-badge-link" style="font-size: 0.85rem;">
-                  <svg width="16" height="16" fill="#00b67a" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  Verified on Trustpilot
-                </span>
-              </div>
-            </div>
-            <div class="review-metric-pill" style="padding: 0.85rem 1.35rem;">
-              <div class="pill-stat-num" style="font-size: 1.5rem;">12.2K URLs</div>
-              <div class="pill-stat-label" style="font-size: 0.78rem;">Indexed &bull; Verified Online Visibility</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-<section class="section" id="case-studies-preview">
+  <section class="section" id="work">
     <div class="container">
       <div class="section-header text-center">
-        <span class="section-eyebrow">Verifiable Enterprise Results</span>
-        <h2 class="section-title">Case Studies Backed by Real Proof</h2>
-        <p class="section-description">
-          Every figure cited is verified directly from Google Search Console, Google Business Profile Performance, or WooCommerce financial dashboards.
-        </p>
+        <span class="section-eyebrow">Selected Work</span>
+        <h2 class="section-title">Case Studies</h2>
+        <p class="section-description">Seven client projects across eCommerce, technical, international and local SEO. Every figure comes from the screenshot shown on its card.</p>
       </div>
-
       <div class="case-study-grid">
-        
-        <!-- Card 1: SMK Store -->
         <a href="case-studies/smk-store/index.html" class="case-card" data-category="ecommerce">
           <div class="case-card-visual">
             <div class="card-top-row">
@@ -745,131 +143,131 @@
               <span class="metric-sub-label">Monthly net sales: $5,832 to $19,100</span>
             </div>
           </div>
+          <div class="case-card-thumb"><img src="assets/smk-store-net-sales-june-2026.webp" alt="SMK Store WooCommerce dashboard showing $19,100 net sales for June 2026" loading="lazy"></div>
           <div class="case-card-content">
-            <div class="case-card-meta">
-              <span>United States</span> &bull; <span>WooCommerce Dashboard</span>
-            </div>
-            <h3 class="case-card-title">From $5.8K to $19.1K Monthly Net Sales in 60 Days</h3>
-            <p class="case-card-summary">
-              Rebuilt thin product copy, eliminated crawl budget waste, and implemented complete Product schema across a 35,000-SKU store.
-            </p>
-            <span class="case-card-link">View Full Case Study & Proof &rarr;</span>
+            <div class="case-card-meta"><span>United States · WooCommerce dashboard</span></div>
+            <h3 class="case-card-title">From $5.8K to $19.1K monthly net sales in two months</h3>
+            <p class="case-card-summary">Rewrote thin product copy brand by brand across a 35,000-product catalog, fixed crawl waste and Core Web Vitals, and added product schema.</p>
+            <span class="case-card-link">View case study &rarr;</span>
           </div>
         </a>
-
-        <!-- Card 2: Michigan Outdoor Sports -->
         <a href="case-studies/michigan-outdoor-sports/index.html" class="case-card" data-category="technical">
           <div class="case-card-visual">
             <div class="card-top-row">
               <span class="client-tag">Michigan Outdoor Sports</span>
-              <span class="card-badge">Technical SEO &amp; Indexation</span>
+              <span class="card-badge">Technical SEO</span>
             </div>
             <div class="card-metric-highlight">
-              <span class="metric-big-num">+1,631%</span>
-              <span class="metric-sub-label">Impressions: 491 to 8.5K &bull; +383% Clicks (66 to 319)</span>
+              <span class="metric-big-num">4K → 12.2K</span>
+              <span class="metric-sub-label">Indexed pages, to 21 August 2026</span>
             </div>
           </div>
+          <div class="case-card-thumb"><img src="assets/michigan-outdoor-sports-pages-indexed.webp" alt="Google Search Console showing 12.2K pages indexed for Michigan Outdoor Sports" loading="lazy"></div>
           <div class="case-card-content">
-            <div class="case-card-meta">
-              <span>Michigan, USA</span> &bull; <span>Google Search Console Verified</span>
-            </div>
-            <h3 class="case-card-title">+1,631% Impressions (8.5K) &amp; +383% Organic Clicks</h3>
-            <p class="case-card-summary">
-              Overcame de-indexing cliff across 12.2K catalog SKUs via custom programmatic pipeline &mdash; jumping position from 18.0 to 11.3 and generating 8.5K search impressions.
-            </p>
-            <span class="case-card-link">View Full Case Study &amp; Proof &rarr;</span>
+            <div class="case-card-meta"><span>Michigan, USA · Google Search Console</span></div>
+            <h3 class="case-card-title">Indexed pages from about 4,000 to 12.2K after a de-indexing event</h3>
+            <p class="case-card-summary">Submitted sitemaps, removed crawl waste and rewrote thin pages at scale with SEO Autopilot. US clicks rose from 224 to 322.</p>
+            <span class="case-card-link">View case study &rarr;</span>
           </div>
         </a>
-
-        <!-- Card 3: Remit Choice -->
         <a href="case-studies/remit-choice/index.html" class="case-card" data-category="technical">
           <div class="case-card-visual">
             <div class="card-top-row">
               <span class="client-tag">Remit Choice</span>
-              <span class="card-badge">Fintech / Technical</span>
+              <span class="card-badge">International SEO</span>
             </div>
             <div class="card-metric-highlight">
-              <span class="metric-big-num">#1 SERP</span>
-              <span class="metric-sub-label">Above Wise &amp; Xoom: free money transfer to Pakistan from the UK</span>
+              <span class="metric-big-num">#1</span>
+              <span class="metric-sub-label">Above Wise and Xoom, UK to Pakistan</span>
             </div>
           </div>
+          <div class="case-card-thumb"><img src="assets/remit-choice-rank-1-above-wise-xoom.webp" alt="Google results with Remit Choice first above Xoom and Wise" loading="lazy"></div>
           <div class="case-card-content">
-            <div class="case-card-meta">
-              <span>Global / UK</span> &bull; <span>113K Annual Clicks Verified</span>
-            </div>
-            <h3 class="case-card-title">Ranked #1 Above Wise and Xoom for a Free Transfer to Pakistan</h3>
-            <p class="case-card-summary">
-              Introduced international SEO, replaced zero-volume targets with demand-based keywords, and earned a place in Google’s AI Overview.
-            </p>
-            <span class="case-card-link">View Full Case Study & Proof &rarr;</span>
+            <div class="case-card-meta"><span>UK and global · 113K organic clicks in 2024</span></div>
+            <h3 class="case-card-title">Ranked #1 above Wise and Xoom with international SEO</h3>
+            <p class="case-card-summary">One page per country and corridor, one primary search per page, consolidated copy and a clear heading structure. Also named in a Google AI Overview.</p>
+            <span class="case-card-link">View case study &rarr;</span>
           </div>
         </a>
-
-        <!-- Card 4: Doll's Cleaning -->
         <a href="case-studies/dolls-cleaning/index.html" class="case-card" data-category="local">
           <div class="case-card-visual">
             <div class="card-top-row">
-              <span class="client-tag">Doll's Cleaning</span>
+              <span class="client-tag">D.O.L.L.S. Cleaning</span>
               <span class="card-badge">Local SEO</span>
             </div>
             <div class="card-metric-highlight">
-              <span class="metric-big-num">#1 & #2</span>
-              <span class="metric-sub-label">Positions on Google + #1 AI Overview Citation</span>
+              <span class="metric-big-num">41K → 106K</span>
+              <span class="metric-sub-label">Monthly impressions, June to July 2025</span>
             </div>
           </div>
+          <div class="case-card-thumb"><img src="assets/dolls-cleaning-search-console-comparison.webp" alt="Google Search Console comparison for D.O.L.L.S. Cleaning" loading="lazy"></div>
           <div class="case-card-content">
-            <div class="case-card-meta">
-              <span>Chesterfield, MI</span> &bull; <span>106K Search Impressions</span>
-            </div>
-            <h3 class="case-card-title">Local Market Domination: Positions #1 & #2 in Clawson</h3>
-            <p class="case-card-summary">
-              Hyper-local geo-silo architecture and Google Business Profile sync transforming quiet dispatch into a fully booked residential route.
-            </p>
-            <span class="case-card-link">View Full Case Study & Proof &rarr;</span>
+            <div class="case-card-meta"><span>Michigan, USA · Google Search Console</span></div>
+            <h3 class="case-card-title">Impressions from 41K to 106K in a month, plus #1 and #2 in Clawson</h3>
+            <p class="case-card-summary">Optimized the Business Profile, built service-area pages, fixed local on-page signals and citations, and set up a steady review process.</p>
+            <span class="case-card-link">View case study &rarr;</span>
           </div>
         </a>
-
-        <!-- Card 5: HVAC Services Team -->
         <a href="case-studies/hvac-services-team/index.html" class="case-card" data-category="local">
           <div class="case-card-visual">
             <div class="card-top-row">
               <span class="client-tag">HVAC Services Team</span>
-              <span class="card-badge">Local / AEO</span>
+              <span class="card-badge">Local SEO and AI search</span>
             </div>
             <div class="card-metric-highlight">
               <span class="metric-big-num">AI Overview</span>
-              <span class="metric-sub-label">Cited by Name for AC Installation Queries</span>
+              <span class="metric-sub-label">Named for AC estimates in Simi Valley, CA</span>
             </div>
           </div>
+          <div class="case-card-thumb"><img src="assets/hvac-services-team-ai-overview.webp" alt="Google AI Overview naming HVAC Services Team in Simi Valley" loading="lazy"></div>
           <div class="case-card-content">
-            <div class="case-card-meta">
-              <span>Simi Valley, CA</span> &bull; <span>Page 1 Organic Leader</span>
-            </div>
-            <h3 class="case-card-title">Winning Google AI Overview Citations in Simi Valley</h3>
-            <p class="case-card-summary">
-              Structured answer architecture and local service pages leading Google's generative search to cite the business by name for free AC estimates.
-            </p>
-            <span class="case-card-link">View Full Case Study & Proof &rarr;</span>
+            <div class="case-card-meta"><span>Simi Valley, CA · Live Google results</span></div>
+            <h3 class="case-card-title">Named in Google's AI Overview, with the blog on page one</h3>
+            <p class="case-card-summary">Cleaned up technical issues, rebuilt core service pages, strengthened local signals and structured content for AI Overviews.</p>
+            <span class="case-card-link">View case study &rarr;</span>
           </div>
         </a>
-
-        <!-- In-Grid Magnet Card -->
-        <div class="case-card-magnet">
-          <h3>Explore All 8 In-Depth Case Studies</h3>
-          <p>
-            Dive into the complete collection including Mammoth Roofing (+167% impressions across 4 profiles), Door Doctor (490 interactions), and Glendora Kitchens.
-          </p>
-          <a href="case-studies/index.html" class="btn btn-mint">
-            Open Case Studies &rarr;
-          </a>
-        </div>
-
-      </div>
-
-      <div style="text-align: center; margin-top: 1rem;">
-        <a href="case-studies/index.html" class="btn btn-primary btn-lg">
-          Browse All 8 Client Deep Dives &rarr;
+        <a href="case-studies/mammoth-roofing/index.html" class="case-card" data-category="local">
+          <div class="case-card-visual">
+            <div class="card-top-row">
+              <span class="client-tag">Mammoth Roofing</span>
+              <span class="card-badge">Local SEO</span>
+            </div>
+            <div class="card-metric-highlight">
+              <span class="metric-big-num">+167%</span>
+              <span class="metric-sub-label">Impressions 16.9K to 45.2K in 28 days</span>
+            </div>
+          </div>
+          <div class="case-card-thumb"><img src="assets/mammoth-roofing-search-console-comparison.webp" alt="Google Search Console comparison for Mammoth Roofing" loading="lazy"></div>
+          <div class="case-card-content">
+            <div class="case-card-meta"><span>Texas · Google Search Console</span></div>
+            <h3 class="case-card-title">Impressions up 167% in 28 days across Texas locations</h3>
+            <p class="case-card-summary">Mapped keywords across services, built location pages, fixed technical issues and published content around what Texas homeowners search.</p>
+            <span class="case-card-link">View case study &rarr;</span>
+          </div>
         </a>
+        <a href="case-studies/door-doctor/index.html" class="case-card" data-category="local">
+          <div class="case-card-visual">
+            <div class="card-top-row">
+              <span class="client-tag">Door Doctor</span>
+              <span class="card-badge">Google Business Profile</span>
+            </div>
+            <div class="card-metric-highlight">
+              <span class="metric-big-num">490</span>
+              <span class="metric-sub-label">Profile interactions, April to May 2025</span>
+            </div>
+          </div>
+          <div class="case-card-thumb"><img src="assets/door-doctor-business-profile-performance.webp" alt="Google Business Profile Performance report showing 490 interactions" loading="lazy"></div>
+          <div class="case-card-content">
+            <div class="case-card-meta"><span>Multiple locations · Business Profile performance</span></div>
+            <h3 class="case-card-title">490 Business Profile interactions in two months</h3>
+            <p class="case-card-summary">Standardized business details across every location, optimized each profile and set up a posting and review routine.</p>
+            <span class="case-card-link">View case study &rarr;</span>
+          </div>
+        </a>
+      </div>
+      <div style="text-align:center; margin-top:2.5rem;">
+        <a href="case-studies/index.html" class="btn btn-primary btn-lg">Browse all case studies &rarr;</a>
       </div>
     </div>
   </section>
@@ -946,12 +344,38 @@
             <div class="pipeline-step">
               <div class="step-num">4</div>
               <div class="step-content">
-                <h5>Submit and Track</h5>
-<p>Each URL is submitted for indexing under a daily cap, with run logs so every page status can be tracked and retried.</p>
+                <h5>Track and Retry</h5>
+<p>Pages are published under a daily cap, with run logs so every page status can be tracked and retried.</p>
               </div>
             </div>
           </div>
 
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-subtle" id="ai-visibility">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-eyebrow">AI Search · GEO and AEO</span>
+        <h2 class="section-title">AI Visibility</h2>
+        <p class="section-description">Building visibility in Google AI Overviews and AI answers, not only in the blue links.</p>
+      </div>
+      <div class="pf-ai-card">
+        <div class="pf-ai-head">
+          <div>
+            <h3>Remit Choice: Semrush AI Visibility</h3>
+            <p>November 2026, across ChatGPT, Google AI Overview, Google AI Mode and Gemini.</p>
+          </div>
+          <div class="pf-ai-nums">
+            <div><strong>71</strong><span>brand mentions</span></div>
+            <div><strong>66</strong><span>cited pages</span></div>
+          </div>
+        </div>
+        <div class="pf-ai-rows">
+          <a class="pf-ai-row" href="case-studies/remit-choice/index.html"><strong>Remit Choice</strong><span>Named in a Google AI Overview for money transfers to Ghana, and #1 above Wise and Xoom for the UK to Pakistan corridor</span><em>View case study &rarr;</em></a>
+          <a class="pf-ai-row" href="case-studies/hvac-services-team/index.html"><strong>HVAC Services Team</strong><span>Named in a Google AI Overview for free AC installation estimates in Simi Valley, CA, within 4 weeks</span><em>View case study &rarr;</em></a>
+          <a class="pf-ai-row" href="case-studies/dolls-cleaning/index.html"><strong>D.O.L.L.S. Cleaning</strong><span>Named in a Google AI Overview for post-construction cleaning in Chesterfield, MI, with the page ranking #1 below it</span><em>View case study &rarr;</em></a>
         </div>
       </div>
     </div>
@@ -961,7 +385,7 @@
       <div class="story-grid">
         
         <div class="story-main">
-          <span class="section-eyebrow">5+ Years Career Arc</span>
+          <span class="section-eyebrow">Career Arc</span>
           <h2 class="section-title">From Writing Content to Building SEO Systems</h2>
           <div class="story-lead">
             "SEO isn't about guessing algorithm shifts. It's about engineering cleaner site architecture, answering intent faster than competitors, and removing technical friction."
@@ -992,8 +416,7 @@
 
       </div>
     </div>
-  </section>
-<section class="section" id="experience">
+  </section><section class="section" id="experience">
     <div class="container container-narrow">
       <div class="section-header">
         <span class="section-eyebrow">Work History</span>
@@ -1004,15 +427,14 @@
       </div>
 
       <div class="timeline">
-<div class="timeline-item current"><div class="timeline-marker"></div><div class="timeline-header"><div><span class="timeline-role">SEO Manager</span> <span class="timeline-company">@ Momento Digital Agency</span></div><span class="timeline-date">Feb 2026 &ndash; Oct 2026</span></div><div class="timeline-scope">Part-time Feb to Mar, full-time Apr to Oct 2026 &bull; Gujranwala, Pakistan</div><ul class="timeline-achievements"><li><strong>SMK Store</strong> (US eCommerce, about 35,000 products), sole SEO owner: fixed Core Web Vitals, crawl budget and product schema, built content clusters and topical authority, and scaled unique product copy with SEO Autopilot. Monthly net sales rose from $5,832 to $19,100 in two months (April to June 2026).</li><li><strong>Michigan Outdoor Sports</strong> (US WooCommerce), sole SEO owner: after a de-indexing event, built SEO Autopilot and cleaned up sitemaps and crawl waste. Clicks rose from 66 to 319 (+383%), impressions from 491 to 8.5K and average position from 18 to 11.3 (Dec 2025 to Jan 2026 vs Feb to Mar 2026), then US clicks from 224 to 322 and CTR from 3.7% to 5.1% (April to August 2026).</li></ul></div>
+<div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-header"><div><span class="timeline-role">SEO Manager</span> <span class="timeline-company">@ Momento Digital Agency</span></div><span class="timeline-date">Feb 2026 &ndash; Oct 2026</span></div><div class="timeline-scope">Part-time Feb to Mar, full-time Apr to Oct 2026 &bull; Gujranwala, Pakistan</div><ul class="timeline-achievements"><li><strong>SMK Store</strong> (US eCommerce, about 35,000 products), sole SEO owner: fixed Core Web Vitals, crawl budget and product schema, built content clusters and topical authority, and scaled unique product copy with SEO Autopilot. Monthly net sales rose from $5,832 to $19,100 in two months (April to June 2026).</li><li><strong>Michigan Outdoor Sports</strong> (US WooCommerce), sole SEO owner: after a de-indexing event, built SEO Autopilot and cleaned up sitemaps and crawl waste. Clicks rose from 66 to 319 (+383%), impressions from 491 to 8.5K and average position from 18 to 11.3 (Dec 2025 to Jan 2026 vs Feb to Mar 2026), then US clicks from 224 to 322 and CTR from 3.7% to 5.1% (April to August 2026).</li></ul></div>
 <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-header"><div><span class="timeline-role">SEO Team Lead</span> <span class="timeline-company">@ Time Technologies LLC</span></div><span class="timeline-date">Jan 2026 &ndash; Apr 2026</span></div><div class="timeline-scope">Full-time, on-site &bull; Lahore, Pakistan</div><ul class="timeline-achievements"><li>Led a team of 7 on the Centaurus project and took every audit-backed SEO strategy directly to the CEO for approval.</li><li><strong>HVAC Services Team (Simi Valley, CA):</strong> built the local SEO strategy, started programmatic SEO for California cities, added a free HVAC cost estimator and set the backlink strategy. The company was named in Google’s AI Overview for free AC installation estimates, and its blog became the first organic result for local AC searches.</li><li>Worked with Next.js developers to add every SEO field in Sanity CMS across four sites, audited the Google Business Profile and set up automated SEO reporting in Go High Level.</li></ul></div>
 <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-header"><div><span class="timeline-role">SEO Project Lead &amp; SEO Analyst</span> <span class="timeline-company">@ OrlandoWebPros and ADSCARRY LLC</span></div><span class="timeline-date">Feb 2026 &ndash; Mar 2026</span></div><div class="timeline-scope">Part-time &bull; USA, remote contracts</div><ul class="timeline-achievements"><li><strong>OrlandoWebPros:</strong> delivered the SEO strategy for a website design and development company after a comprehensive audit: keyword research, site structure, CRO-optimized layouts and wireframes, content and off-page strategy. Personally implemented Web 2.0 backlinks, local business listings, image submissions and technical SEO.</li><li><strong>ADSCARRY:</strong> cut mobile LCP from 15.6s to 3.5s, led the client-side to server-side rendering migration, and fixed “untitled” SERP listings by moving titles and meta descriptions into the HTML source. Impressions grew about 15% in the first month.</li></ul></div>
 <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-header"><div><span class="timeline-role">SEO Team Lead</span> <span class="timeline-company">@ 321Groww</span></div><span class="timeline-date">Sep 2024 &ndash; Aug 2025</span></div><div class="timeline-scope">Part-time &bull; Gujrat, Pakistan</div><ul class="timeline-achievements"><li>Led a team of 4 and handled client projects end to end, including Mammoth Roofing, D.O.L.L.S. Cleaning, Door Doctor and AAA Mobile Tyres.</li><li><strong>Mammoth Roofing (Texas, 4 locations):</strong> impressions from 16.9K to 45.2K (+167%) in 28 days, then monthly calls from 18 to 41 (+128%).</li><li><strong>D.O.L.L.S. Cleaning (Michigan):</strong> impressions from 41K to 106K in one month, and #1 and #2 for carpet cleaning in Clawson, MI. <strong>Door Doctor:</strong> 490 Business Profile interactions in two months.</li></ul></div>
 <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-header"><div><span class="timeline-role">SEO Team Lead, earlier SEO Executive</span> <span class="timeline-company">@ Remit Choice Limited</span></div><span class="timeline-date">Apr 2023 &ndash; Jan 2026</span></div><div class="timeline-scope">Team Lead from Apr 2024 &bull; Gujranwala, Pakistan</div><ul class="timeline-achievements"><li>Led a team of 8 while heading on-page, off-page and technical SEO, and merged the separate on-page and off-page groups into one team with a shared strategy.</li><li>Introduced international SEO and replaced zero-volume targets with demand-based keywords. Ranked #1 on Google above Wise and Xoom for a free money transfer to Pakistan from the UK search, and reached top 10 in the UK, Italy and Spain.</li><li>Built an AI-based SEO strategy that ranked the brand in Google’s AI Overview (Semrush, November 2026: 71 mentions and 66 cited pages across ChatGPT, Google AI Overview, AI Mode and Gemini).</li><li><strong>Search Console:</strong> September to December 2023 had 36K clicks, 1.97M impressions, 1.8% CTR and average position 47.1. Full-year 2024 had 113K clicks and 5.76M impressions, with CTR improved to 2.0% and average position to 43.4.</li><li>Organic traffic from 2,907 (April 2023) to 11,772 (December 2025), about +305% (Semrush estimate), and organic conversion rate from 3% to 15% in late 2024.</li></ul></div>
 <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-header"><div><span class="timeline-role">Early career</span> <span class="timeline-company">@ Connect Games Studio and FarmGhar</span></div><span class="timeline-date">2022</span></div><div class="timeline-scope">YouTube SEO and SEO Executive roles</div><ul class="timeline-achievements"><li>YouTube SEO Specialist, Connect Games Studio (Mar to May 2022). SEO Executive, FarmGhar (May to Dec 2022). SEO Assistant and Content Writer, FarmGhar (Sep to Dec 2022).</li></ul></div>
 </div></div>
-  </section>
-<section class="section section-subtle" id="skills">
+  </section><section class="section section-subtle" id="skills">
     <div class="container">
       <div class="section-header text-center">
         <span class="section-eyebrow">Core Competencies</span>
@@ -1086,9 +508,7 @@
 
       </div>
     </div>
-  </section>
-  <!-- Section: Accredited Certifications & Academic Degree (Optimized & Fast) -->
-  <section class="section" id="credentials" style="background: #ffffff; padding: 6rem 0;">
+  </section><section class="section" id="credentials" style="background: #ffffff; padding: 6rem 0;">
     <div class="container">
       <div class="section-header text-center" style="max-width: 760px; margin: 0 auto 3.5rem;">
         <span class="section-eyebrow">Accredited Expertise &amp; Academic Foundation</span>
@@ -1187,8 +607,53 @@
       </div>
 
     </div>
-  </section>
-<footer class="site-footer">
+  </section><section class="semrush-reviews-section pf-reviews" id="reviews">
+    <div class="container">
+      <div class="reviews-header text-center" style="max-width: 760px; margin: 0 auto 3rem;">
+        <span class="semrush-eyebrow">Review</span>
+        <h2 class="semrush-section-title">Client Feedback</h2>
+        <p class="semrush-section-desc" style="margin: 0 auto;">
+          Direct, verified feedback from e-commerce leadership who experienced tangible revenue growth through technical and programmatic SEO.
+        </p>
+      </div>
+
+      <!-- Single Featured Verified Review: Michigan Sports & Outdoor Inc -->
+      <div style="max-width: 840px; margin: 0 auto;">
+        <div class="semrush-review-card" style="border-width: 2px; border-color: #e2e8f0; padding: 3rem;">
+          <div>
+            <div class="review-stars-row" style="margin-bottom: 1.5rem;">
+              <span class="trustpilot-star"></span>
+              <span class="trustpilot-star"></span>
+              <span class="trustpilot-star"></span>
+              <span class="trustpilot-star"></span>
+              <span class="trustpilot-star"></span>
+              <span style="font-size: 0.9rem; font-weight: 800; color: #00b67a; margin-left: 0.65rem;">5 stars on Trustpilot</span>
+            </div>
+            <p class="review-quote" style="font-size: 1.25rem; line-height: 1.7; color: #090a0f; font-weight: 550;">
+              &ldquo;Highly recommend for any e-commerce business looking to scale. They are an expert at optimizing for competitive retail niches and have helped Michigan Sports Outdoor substantially increase our online visibility. Very professional, results-oriented, and easy to work with.&rdquo;
+            </p>
+          </div>
+          <div class="review-footer" style="padding-top: 1.75rem; margin-top: 1rem;">
+            <div class="reviewer-info">
+              <h4 style="font-size: 1.25rem; font-weight: 800; color: #090a0f;">Michigan Sports &amp; Outdoor Inc</h4>
+              <div class="reviewer-meta" style="font-size: 0.9rem; margin-top: 0.2rem;">E-Commerce Business &bull; USA &bull; 17 July 2026</div>
+              <div style="margin-top: 0.5rem;">
+                <span class="trustpilot-badge-link" style="font-size: 0.85rem;">
+                  <svg width="16" height="16" fill="#00b67a" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  Verified on Trustpilot
+                </span>
+              </div>
+            </div>
+            <div class="review-metric-pill" style="padding: 0.85rem 1.35rem;">
+              <div class="pill-stat-num" style="font-size: 1.5rem;">12.2K URLs</div>
+              <div class="pill-stat-label" style="font-size: 0.78rem;">Indexed &bull; Verified Online Visibility</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><footer class="site-footer">
     <div class="container">
       
       <div class="footer-cta-card">
@@ -1201,7 +666,7 @@
             Connect on LinkedIn &rarr;
           </a>
           <a href="case-studies/index.html" class="btn btn-secondary btn-lg">
-            Explore 8 Case Studies
+            Explore 7 Case Studies
           </a>
           <a href="mailto:mubasharshahzad726@gmail.com" class="btn btn-secondary btn-lg">
             Send an Email
@@ -1231,7 +696,7 @@
             <li><a href="case-studies/remit-choice/index.html">Remit Choice (#1 Above Wise)</a></li>
             <li><a href="case-studies/dolls-cleaning/index.html">Doll's Cleaning (#1 & #2 Clawson)</a></li>
             <li><a href="case-studies/hvac-services-team/index.html">HVAC Services (AI Overview)</a></li>
-            <li><a href="case-studies/index.html" style="color: var(--accent-mint);">View All 8 Case Studies &rarr;</a></li>
+            <li><a href="case-studies/index.html" style="color: var(--accent-mint);">View All 7 Case Studies &rarr;</a></li>
           </ul>
         </div>
 

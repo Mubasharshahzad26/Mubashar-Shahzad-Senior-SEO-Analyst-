@@ -224,7 +224,7 @@ img {
   background: transparent;
   border: none;
   cursor: pointer;
-  color: var(--ink-inverse);
+  color: var(--ink-primary);
   padding: 0.5rem;
 }
 
