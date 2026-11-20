@@ -138,20 +138,50 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 7. Operative Search Bar — scroll to case studies
+  // 7. Operative Semrush Search Bar
   const searchBtn = document.querySelector('.semrush-search-btn');
   const searchInput = document.getElementById('domainAuditInput');
   const caseStudiesSection = document.getElementById('case-studies-preview');
 
   function handleSearchAction(e) {
+    if (e) e.preventDefault();
+    const query = searchInput ? searchInput.value.trim().toLowerCase() : '';
+
+    if (searchBtn) {
+      const origText = searchBtn.innerHTML;
+      searchBtn.innerHTML = 'Analyzing...';
+      setTimeout(() => {
+        searchBtn.innerHTML = origText;
+      }, 900);
+    }
+
     if (caseStudiesSection) {
-      e.preventDefault();
       caseStudiesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
       caseStudiesSection.style.transition = 'box-shadow 0.4s ease';
-      caseStudiesSection.style.boxShadow = '0 0 0 4px rgba(0, 221, 175, 0.35)';
+      caseStudiesSection.style.boxShadow = '0 0 0 4px rgba(112, 71, 235, 0.4)';
       setTimeout(() => {
         caseStudiesSection.style.boxShadow = 'none';
-      }, 1800);
+      }, 2000);
+    }
+
+    // Smart card highlighting if query matches any case study
+    if (query && query.length > 2) {
+      const allCards = document.querySelectorAll('.case-card');
+      let matchedAny = false;
+
+      allCards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        if (text.includes(query)) {
+          matchedAny = true;
+          card.style.transition = 'transform 0.4s ease, box-shadow 0.4s ease';
+          card.style.transform = 'translateY(-6px) scale(1.02)';
+          card.style.boxShadow = '0 16px 36px rgba(0, 221, 175, 0.3)';
+          setTimeout(() => {
+            card.style.transform = '';
+            card.style.boxShadow = '';
+          }, 3200);
+        }
+      });
     }
   }
 
