@@ -28,9 +28,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Space+Grotesk:wght@700;800&family=Inter:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="../css/style.css?v=7">
-  <link rel="stylesheet" href="../css/semrush-style.css?v=7">
-  <link rel="stylesheet" href="../css/case-study.css?v=7">
+  <link rel="stylesheet" href="../css/style.css?v=8">
+  <link rel="stylesheet" href="../css/semrush-style.css?v=8">
+  <link rel="stylesheet" href="../css/case-study.css?v=8">
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -100,13 +100,83 @@
         Senior SEO Analyst with 5+ years driving measurable brand visibility and qualified pipeline &mdash; from organic search engines to AI citations. Specializing in Technical SEO, eCommerce revenue turnarounds, and programmatic indexing.
       </p>
 
-      <!-- Signature Semrush Pill Search / Consultation Input -->
-      <div class="semrush-search-bar">
+      <!-- Signature Semrush Pill Search / Free Domain Authority & SEO Health Checker -->
+      <div class="semrush-search-bar" id="auditSearchWrapper">
         <div class="search-input-wrapper">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="text" placeholder="Enter your domain or target niche for strategic analysis..." class="semrush-input" id="domainAuditInput">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7047eb" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" placeholder="Enter your website domain (e.g. yourbrand.com)..." class="semrush-input" id="domainAuditInput">
         </div>
-        <a href="#case-studies-preview" class="semrush-search-btn">Get Insights &rarr;</a>
+        <button type="button" class="semrush-search-btn" id="runDomainAuditBtn">
+          <span>Run Free Audit &rarr;</span>
+        </button>
+      </div>
+
+      <!-- Live Audit Scanner Box (Hidden initially) -->
+      <div id="auditLiveScanner" class="audit-live-scanner" style="display: none;">
+        <div class="scanner-progress-bar">
+          <div class="scanner-progress-fill" id="scannerProgressFill"></div>
+        </div>
+        <div class="scanner-step-text" id="scannerStepText">
+          Querying global link graph &amp; domain trust metrics...
+        </div>
+      </div>
+
+      <!-- Live Audit Results Card (Hidden initially) -->
+      <div id="auditResultCard" class="audit-result-card" style="display: none;">
+        <div class="audit-card-header">
+          <div class="audit-target-domain">
+            <span class="audit-tag">Domain Health &amp; Authority Report</span>
+            <h3 id="auditResultDomainName">yourbrand.com</h3>
+          </div>
+          <button type="button" class="audit-close-btn" id="auditResetBtn">&times; Audit Another</button>
+        </div>
+
+        <div class="audit-metrics-row">
+          <div class="audit-metric-box">
+            <div class="metric-num" id="auditDaScore">34</div>
+            <div class="metric-title">Domain Authority (DA)</div>
+            <div class="metric-status status-good" id="auditDaStatus">Good Growth Potential</div>
+          </div>
+          <div class="audit-metric-box">
+            <div class="metric-num" id="auditHealthScore">82%</div>
+            <div class="metric-title">Technical SEO Health</div>
+            <div class="metric-status status-high" id="auditHealthStatus">Strong Crawl Index</div>
+          </div>
+          <div class="audit-metric-box">
+            <div class="metric-num" id="auditTopicalScore">58%</div>
+            <div class="metric-title">Topical Authority</div>
+            <div class="metric-status status-growing" id="auditTopicalStatus">Expansion Opportunity</div>
+          </div>
+          <div class="audit-metric-box">
+            <div class="metric-num" id="auditAiScore">24%</div>
+            <div class="metric-title">AI Search Visibility</div>
+            <div class="metric-status status-alert" id="auditAiStatus">Unclaimed Citations</div>
+          </div>
+        </div>
+
+        <div class="audit-findings-strip">
+          <div class="audit-finding-item">
+            <span class="finding-icon">&bull;</span>
+            <span id="auditFinding1">Technical Schema: Missing Product / LocalBusiness JSON-LD markup on core commercial pages.</span>
+          </div>
+          <div class="audit-finding-item">
+            <span class="finding-icon">&bull;</span>
+            <span id="auditFinding2">Index Waste: Deep category and faceted navigation causing crawl budget leakage.</span>
+          </div>
+          <div class="audit-finding-item">
+            <span class="finding-icon">&bull;</span>
+            <span id="auditFinding3">AI Citation Gap: Brand not yet cited as top recommendation in Google AI Overviews.</span>
+          </div>
+        </div>
+
+        <div class="audit-card-footer">
+          <a href="https://www.linkedin.com/in/mubashar-sharif-senior-seo-analyst/" target="_blank" rel="noopener" class="audit-cta-btn">
+            Consult Mubashar Sharif to Fix Gaps &rarr;
+          </a>
+          <a href="#case-studies-preview" class="audit-secondary-link">
+            See How I Solved Similar Issues in 8 Case Studies &darr;
+          </a>
+        </div>
       </div>
 
       <!-- Semrush Two-Card Hero Row -->
@@ -424,8 +494,8 @@
           </div>
 
           <div class="ladder-item active-card">
-            <div class="ladder-stat">&uarr; 12.2K</div>
-            <div class="ladder-label">Product URLs Indexed in Google Search Console</div>
+            <div class="ladder-stat">&uarr; 8.5K Imp &bull; +383% Clicks</div>
+            <div class="ladder-label">GSC Verified Comparison (Michigan Outdoor Sports)</div>
           </div>
 
           <div class="ladder-item dim">
@@ -452,8 +522,8 @@
           </div>
 
           <div class="stat-desc-item active-desc">
-            <h4>Build credibility with verified Search Console proof (12.2K URLs).</h4>
-            <p>Every case study, traffic metric, and revenue increase in this portfolio is backed by actual Google Search Console, WooCommerce, and GA4 screenshots. No vanity rankings &mdash; only measurable commercial pipeline.</p>
+            <h4>+1,631% Impressions (8.5K) &amp; +383% Clicks (66 to 319).</h4>
+            <p>Official Google Search Console performance comparison for Michigan Sports &amp; Outdoor &mdash; jumping average SERP position from 18.0 to 11.3 and indexing 12.2K catalog SKUs to restore daily warehouse order fulfillment.</p>
           </div>
 
           <div class="stat-desc-item">
@@ -692,22 +762,22 @@
           <div class="case-card-visual">
             <div class="card-top-row">
               <span class="client-tag">Michigan Outdoor Sports</span>
-              <span class="card-badge">Technical SEO</span>
+              <span class="card-badge">Technical SEO &amp; Indexation</span>
             </div>
             <div class="card-metric-highlight">
-              <span class="metric-big-num">12,200</span>
-              <span class="metric-sub-label">Indexed pages (up from ~4,000 suppression)</span>
+              <span class="metric-big-num">+1,631%</span>
+              <span class="metric-sub-label">Impressions: 491 to 8.5K &bull; +383% Clicks (66 to 319)</span>
             </div>
           </div>
           <div class="case-card-content">
             <div class="case-card-meta">
-              <span>Michigan, USA</span> &bull; <span>Google Search Console</span>
+              <span>Michigan, USA</span> &bull; <span>Google Search Console Verified</span>
             </div>
-            <h3 class="case-card-title">Indexing Recovery After a De-indexing Event</h3>
+            <h3 class="case-card-title">+1,631% Impressions (8.5K) &amp; +383% Organic Clicks</h3>
             <p class="case-card-summary">
-              Built SEO Autopilot to fix thousands of thin brand and product pages, publishing unique copy and submitting URLs in controlled daily batches.
+              Overcame de-indexing cliff across 12.2K catalog SKUs via custom programmatic pipeline &mdash; jumping position from 18.0 to 11.3 and generating 8.5K search impressions.
             </p>
-            <span class="case-card-link">View Full Case Study & Proof &rarr;</span>
+            <span class="case-card-link">View Full Case Study &amp; Proof &rarr;</span>
           </div>
         </a>
 
@@ -1028,16 +1098,22 @@
         </p>
       </div>
 
-      <!-- Clean, Fast-Loading Semrush Certificate Cards (Optimized WebP, 46KB each) -->
+      <!-- Large Showcase Semrush Certificate Cards (Optimized WebP, High-Resolution Display) -->
       <div class="credentials-clean-grid">
         
         <!-- Cert 1: On-Page SEO & AI Search -->
         <div class="clean-cert-card">
-          <div class="clean-cert-thumb">
+          <div class="clean-cert-preview">
             <picture>
               <source srcset="assets/certificates/semrush-onpage-ai-search.webp" type="image/webp">
-              <img src="../assets/certificates/semrush-onpage-ai-search.jpg" alt="Semrush Certificate - On-Page SEO and AI Search Essentials - Mubashar Sharif" width="130" height="95" loading="lazy">
+              <img src="../assets/certificates/semrush-onpage-ai-search.jpg" alt="Semrush Certificate - On-Page SEO and AI Search Essentials - Mubashar Sharif" class="cert-large-img" loading="lazy">
             </picture>
+            <div class="cert-overlay-hover">
+              <a href="../assets/certificates/semrush-onpage-ai-search.pdf" target="_blank" class="cert-view-btn">
+                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                View Official PDF &rarr;
+              </a>
+            </div>
           </div>
           <div class="clean-cert-content">
             <div class="clean-cert-badge">Semrush Academy Accredited</div>
@@ -1048,7 +1124,7 @@
             <div class="clean-cert-actions">
               <a href="../assets/certificates/semrush-onpage-ai-search.pdf" target="_blank" class="clean-btn-pdf">
                 <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                View PDF Certificate &rarr;
+                Download Official Certificate (PDF) &rarr;
               </a>
             </div>
           </div>
@@ -1056,11 +1132,17 @@
 
         <!-- Cert 2: Mobile SEO -->
         <div class="clean-cert-card">
-          <div class="clean-cert-thumb">
+          <div class="clean-cert-preview">
             <picture>
               <source srcset="assets/certificates/semrush-mobile-seo.webp" type="image/webp">
-              <img src="../assets/certificates/semrush-mobile-seo.jpg" alt="Semrush Certificate - How to Optimize for Mobile - Mubashar Sharif" width="130" height="95" loading="lazy">
+              <img src="../assets/certificates/semrush-mobile-seo.jpg" alt="Semrush Certificate - How to Optimize for Mobile - Mubashar Sharif" class="cert-large-img" loading="lazy">
             </picture>
+            <div class="cert-overlay-hover">
+              <a href="../assets/certificates/semrush-mobile-seo.pdf" target="_blank" class="cert-view-btn">
+                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                View Official PDF &rarr;
+              </a>
+            </div>
           </div>
           <div class="clean-cert-content">
             <div class="clean-cert-badge">Semrush Academy Accredited</div>
@@ -1071,7 +1153,7 @@
             <div class="clean-cert-actions">
               <a href="../assets/certificates/semrush-mobile-seo.pdf" target="_blank" class="clean-btn-pdf">
                 <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                View PDF Certificate &rarr;
+                Download Official Certificate (PDF) &rarr;
               </a>
             </div>
           </div>
@@ -1173,6 +1255,6 @@
     </div>
   </footer>
   <!-- Scripts -->
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=8"></script>
 </body>
 </html>
