@@ -1,11 +1,11 @@
-<img src="assets/mubashar-sharif-senior-seo-analyst.webp" alt="Mubashar Sharif, Senior SEO Analyst" width="140" align="right">
+<img src="assets/mubashar-sharif-senior-seo-analyst.webp" alt="Mubashar Sharif, SEO Manager" width="140" align="right">
 
 # Mubashar Sharif
 
-**Senior SEO Analyst · Founder, SEO Autopilot**
+**SEO Manager · Founder, SEO Autopilot**
 Daska, Punjab, Pakistan · Works US business hours
 
-I'm Mubashar Sharif, a Senior SEO Analyst and the founder of SEO Autopilot, with 5+ years of hands-on technical, local and ecommerce SEO for 20+ clients. I helped a 35,000-product store grow monthly net sales from $5,832 to $19,100 in two months, took a Michigan retailer from about 4,000 to 12.2K indexed pages, and ranked a UK remittance brand #1 above Wise and Xoom, with 113K organic clicks in 2024. I also built SEO Autopilot, the content and indexing system used in that Michigan recovery. I'm Semrush and HubSpot certified.
+I'm Mubashar Sharif, an SEO Manager and the founder of SEO Autopilot, with 5+ years of hands-on technical, local and ecommerce SEO for 20+ clients. I helped a 35,000-product store grow monthly net sales from $5,832 to $19,100 in two months, took a Michigan retailer from about 4,000 to 12.2K indexed pages, and ranked a UK remittance brand #1 above Wise and Xoom, with 113K organic clicks in 2024. I also built SEO Autopilot, the content and indexing system used in that Michigan recovery. I'm Semrush and HubSpot certified.
 
 [Email me](mailto:mubasharshahzad726@gmail.com) · [LinkedIn](https://www.linkedin.com/in/mubashar-sharif-senior-seo-analyst)
 
@@ -45,7 +45,7 @@ Each result is backed by original screenshots from Google Search Console, WooCom
 **Indexed pages from about 4,000 to 12.2K, and US clicks from 224 to 322.**
 
 - **Problem:** Thin brand and product pages, mass non-indexing and wasted crawl budget after a de-indexing event.
-- **What I did:** Submitted sitemaps, fixed indexing blocks and crawl waste, and rewrote thin pages at scale with SEO Autopilot. Net sales went from $0.00 on 20 July to $523.49 month to date on 25 September.
+- **What I did:** Submitted sitemaps, fixed indexing blocks and crawl waste, and rewrote thin pages at scale with SEO Autopilot.
 
 <img src="assets/michigan-outdoor-sports-pages-indexed.webp" alt="Google Search Console showing 12.2K pages indexed on 21 August 2026, up from 5,247 on 13 June." width="49%"> <img src="assets/michigan-outdoor-sports-us-clicks.webp" alt="Google Search Console showing US clicks of 224 against 322 and CTR of 3.7% against 5.1%." width="49%"> 
 
@@ -93,17 +93,6 @@ Each result is backed by original screenshots from Google Search Console, WooCom
 
 <img src="assets/mammoth-roofing-search-console-comparison.webp" alt="Google Search Console comparison for Mammoth Roofing showing impressions rising from 16.9K to 45.2K over 28 days." width="60%"> 
 
-### Door Doctor
-
-*Google Business Profile · Multiple locations · April to May 2025*
-
-**490 Business Profile interactions in two months.**
-
-- **Problem:** Inconsistent profiles across locations, with mismatched details and no posting routine.
-- **What I did:** Standardized business details across every location, optimized each profile and set up a posting and review routine.
-
-<img src="assets/door-doctor-business-profile-performance.webp" alt="Google Business Profile Performance report showing 490 interactions for April to May 2025." width="60%"> 
-
 ## Certificates
 
 - [SEO Fundamentals](https://static.semrush.com/academy/certificates/e45cf0b323/mubashar-shahzad_25.pdf), Semrush
@@ -123,17 +112,17 @@ These certificates show the name Mubashar Shahzad.
 - Led a cross-functional team of 7: writers, developers, an SEO analyst and a designer
 - Client-side to server-side rendering migration, making key content readable to Googlebot
 
-From client work at previous employers. Screenshots are not published for these results.
+Self-reported figures from client work at previous employers. Screenshots are not published for these results.
 
 ## Experience
 
 | Role | Company | Dates |
 |---|---|---|
 | Founder | SEO Autopilot |  |
-| SEO Manager | Momento Digital Agency, Gujranwala | Feb 2026 to Mar 2026 (part-time), Apr 2026 to Oct 2026 (full-time) |
+| SEO Manager | Momento Digital Agency, Gujranwala | Feb 2026 to Mar 2026 (part-time), Apr 2026 to present (full-time) |
 | SEO Team Lead | Time Technologies LLC, Lahore | Jan 2026 to Apr 2026 |
-| SEO Analyst | ADSCARRY LLC (USA), remote | Feb 2026 to Mar 2026 |
-| SEO Project Lead | OrlandoWebPros (USA), remote | Feb 2026 to Mar 2026 |
+| SEO Analyst | ADSCARRY LLC (USA), remote contract | Feb 2026 to Mar 2026 |
+| SEO Project Lead | OrlandoWebPros (USA), remote contract | Feb 2026 to Mar 2026 |
 | SEO Team Lead | 321Groww, Gujrat | Sep 2024 to Aug 2025 |
 | SEO Team Lead (Apr 2024 to Jan 2026), earlier SEO Executive (Apr 2023 to Mar 2024) | Remit Choice Limited, Gujranwala | Apr 2023 to Jan 2026 |
 
